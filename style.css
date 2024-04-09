@@ -1,0 +1,142 @@
+body{
+    font-family: "Century Ghotic",Calibri,serif;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal; /*le poid du texte*/
+    text-align: center;
+}
+
+header{
+    height: 100px;
+}
+
+
+/*Etendre les éléments du nav sur toute la largeur*/
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+/*Faire un reset sur les listes*/
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+/*cibler les éléments li dans le nav*/ 
+nav li{
+    list-style: none; /*enlever les puces devant les listes*/
+    float: left;/*Mettre les éléments en ligne */
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none; /*annuler  l'éffet de soulignement*/
+    padding: 20px 30px;
+    color: #fff;
+    text-transform: uppercase; /*Mettre en Majuscule*/
+    font-size: 15px;
+}
+/*Centre le menu et lui rendre sa hauteur */
+.table{
+    display: table;
+    margin: 0px auto; /*Centrer les éléments du menu*/
+}
+
+.menu_accueil:hover, .presentation:hover{
+    border-top: 5px solid #4c8;
+    background-color: RGBa(64, 200, 130, 0.15);
+}
+
+.menu_expérinec:hover , .parcours:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241,211,79,0.15);
+}
+.menu_centre:hover, .competences:hover{
+    border-top: 5px solid #0070bb;
+    background-color: RGBa(000,112,192,0.15);
+}
+.menu_contact:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228,77,38,0.15);
+}
+
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center; /*Centrer le texte*/
+    background-color: #c5c5c5;
+    border-top: 4px #aaa dotted;
+}
+
+.img{
+    height: 250px;
+    width: 200px;
+}
+
+main{
+    margin-left: 70px;
+}
+
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.section{
+    margin: Opx 10%;
+
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    float: left;
+    width: 70%;
+}
+
+.cleft , .cright , .sousleft , .sousright{
+    width: 50%;
+    float: left;
+}
+
+.section::after , .exp::after{
+    content: ""; /*ajouter du contenue vide après le vide*/
+    display: table;
+    clear: both;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+/*Pour les mobiles de taille <= 780px*/
+@media screen and (max-width : 700px){
+    header{
+        height: 40px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+}
+
